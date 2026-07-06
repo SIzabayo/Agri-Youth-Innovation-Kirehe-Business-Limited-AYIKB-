@@ -1,0 +1,21 @@
+{
+  "name": "ayikb-website",
+  "version": "1.0.0",
+  "description": "Agri Youth Innovation Kirehe Business Limited (AYIKB) — website and backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "ayikb",
+    "agribusiness",
+    "rwanda",
+    "kirehe"
+  ],
+  "author": "AYIKB",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

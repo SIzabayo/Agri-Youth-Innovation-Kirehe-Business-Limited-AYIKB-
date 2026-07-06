@@ -1,0 +1,37 @@
+# Netlify configuration for AYIKB
+# The site is static HTML/CSS/JS living in the "frontend" folder.
+
+[build]
+  # No build step needed — just publish the static frontend folder.
+  publish = "frontend"
+
+# Optional: nice URLs without the .html extension (e.g. /about -> /about.html)
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/team"
+  to = "/team.html"
+  status = 200
+
+[[redirects]]
+  from = "/story"
+  to = "/story.html"
+  status = 200
+
+[[redirects]]
+  from = "/products"
+  to = "/products.html"
+  status = 200
+
+[[redirects]]
+  from = "/opportunities"
+  to = "/opportunities.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
