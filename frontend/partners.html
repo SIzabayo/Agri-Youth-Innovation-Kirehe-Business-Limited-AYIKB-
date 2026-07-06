@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact AYIKB — Nyamugali, Kirehe District, Eastern Province, Rwanda." />
-  <title>Contact — AYIKB</title>
+  <meta name="description" content="Partner with AYIKB — collaborate with a youth-led agribusiness in Kirehe District, Rwanda. Request to become a partner." />
+  <title>Partners — AYIKB</title>
   <link rel="icon" href="logo.jpg" type="image/jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,14 +36,51 @@
 
   <section class="page-hero">
     <div class="container">
-      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
-      <h1>Contact Us</h1>
-      <p>We'd love to hear from you — reach out about products, opportunities, or partnerships.</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Partners</p>
+      <h1>Partner With Us</h1>
+      <p>Join hands with AYIKB to grow sustainable, youth-led agribusiness in the Kirehe region.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why Partner</span>
+        <h2>Ways to work with AYIKB</h2>
+        <p class="section-sub">We welcome partners who share our vision for sustainable rural development and youth empowerment.</p>
+      </div>
+      <div class="cards">
+        <article class="card card-accent">
+          <div class="card-icon">🤝</div>
+          <h3>Buyers &amp; Markets</h3>
+          <p>Source quality crops, livestock, and organic products directly from our farm.</p>
+        </article>
+        <article class="card card-accent">
+          <div class="card-icon">🏦</div>
+          <h3>Investors &amp; Funders</h3>
+          <p>Support youth-led agribusiness and help us scale our impact across the region.</p>
+        </article>
+        <article class="card card-accent">
+          <div class="card-icon">🌍</div>
+          <h3>NGOs &amp; Development</h3>
+          <p>Collaborate on training, climate resilience, and food security programs.</p>
+        </article>
+        <article class="card card-accent">
+          <div class="card-icon">🚚</div>
+          <h3>Suppliers</h3>
+          <p>Provide inputs, equipment, and services that strengthen our value chain.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Get Started</span>
+        <h2>Request to become a partner</h2>
+        <p class="section-sub">Tell us about your organisation and how you'd like to collaborate. We'll get back to you.</p>
+      </div>
       <div class="contact-grid">
         <div class="contact-info">
           <div class="contact-item">
@@ -54,46 +91,50 @@
             </div>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">🏢</span>
-            <div>
-              <strong>Enterprise</strong>
-              <p>Agri Youth Innovation Kirehe Business Limited (AYIKB)</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">📧</span>
-            <div>
-              <strong>Email</strong>
-              <p>Add your email address here</p>
-            </div>
-          </div>
-          <div class="contact-item">
             <span class="contact-icon">📞</span>
             <div>
               <strong>Phone</strong>
               <p><a href="tel:+250782197021">+250 782 197 021</a></p>
             </div>
           </div>
+          <div class="contact-item">
+            <span class="contact-icon">🌱</span>
+            <div>
+              <strong>What we look for</strong>
+              <p>Shared values in sustainability, youth empowerment, and community growth.</p>
+            </div>
+          </div>
         </div>
 
         <form class="contact-form" onsubmit="return AYIKB.handleSubmit(event)">
           <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your name" />
+            <label for="orgName">Name / Organisation</label>
+            <input type="text" id="orgName" name="orgName" required placeholder="Your name or organisation" />
           </div>
           <div class="form-row">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="you@example.com" />
           </div>
           <div class="form-row">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="What is this about?" />
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+250 ..." />
           </div>
           <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+            <label for="partnerType">Partnership Type</label>
+            <select id="partnerType" name="partnerType" required>
+              <option value="" disabled selected>Select a type</option>
+              <option value="buyer">Buyer / Market</option>
+              <option value="investor">Investor / Funder</option>
+              <option value="ngo">NGO / Development</option>
+              <option value="supplier">Supplier</option>
+              <option value="other">Other</option>
+            </select>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div class="form-row">
+            <label for="message">How would you like to collaborate?</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your partnership idea"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Request</button>
           <p class="form-note" id="formNote" hidden>Thanks! This demo form is not yet connected to a server.</p>
         </form>
       </div>
